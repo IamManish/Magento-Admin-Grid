@@ -2,7 +2,7 @@
 Magento has many different type of field available by default, so will see the syntax of using each of these fields. All the different type of form fields available in magento are located in folder lib\Varien\Data\Form\Element
 
 
-> ###### Text Field
+###### Text Field
 ```
 $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('form')->__('Title3'),
@@ -20,7 +20,7 @@ $fieldset->addField('title', 'text', array(
         ));
 ```
 
-> ###### Time
+###### Time
 ```
 $fieldset->addField('time', 'time', array(
           'label'     => Mage::helper('form')->__('Time'),
@@ -37,7 +37,7 @@ $fieldset->addField('time', 'time', array(
         ));
 ```
 
-> ###### TextArea
+###### TextArea
 ```
 $fieldset->addField('textarea', 'textarea', array(
           'label'     => Mage::helper('form')->__('TextArea'),
@@ -54,7 +54,7 @@ $fieldset->addField('textarea', 'textarea', array(
         ));
 ```
 
-> ###### Submit Button
+###### Submit Button
 ```
 $fieldset->addField('submit', 'submit', array(
           'label'     => Mage::helper('form')->__('Submit'),
@@ -65,7 +65,7 @@ $fieldset->addField('submit', 'submit', array(
         ));
 ```
 
-> ###### Dropdown
+###### Dropdown
 ```
 $fieldset->addField('select', 'select', array(
           'label'     => Mage::helper('form')->__('Select'),
@@ -111,7 +111,7 @@ $fieldset->addField('select2', 'select', array(
         ));
 ```
 
-> ###### Radio Button
+###### Radio Button
 ```
 $fieldset->addField('radio', 'radio', array(
           'label'     => Mage::helper('form')->__('Radio'),
@@ -145,7 +145,7 @@ $fieldset->addField('radio2', 'radios', array(
         ));
 ```
 
-> ###### Password Field
+###### Password Field
 ```
 $fieldset->addField('password', 'password', array(
           'label'     => Mage::helper('form')->__('Password'),
@@ -178,14 +178,14 @@ $fieldset->addField('obscure', 'obscure', array(
         ));
 ```
 
-> ###### Note
+###### Note
 ```
 $fieldset->addField('note', 'note', array(
           'text'     => Mage::helper('form')->__('Text Text'),
         ));
 ```
 
-> ###### Multiselect
+###### Multiselect
 ```
 $fieldset->addField('multiselect2', 'multiselect', array(
           'label'     => Mage::helper('form')->__('Select Type2'),
@@ -214,7 +214,7 @@ $fieldset->addField('multiselect2', 'multiselect', array(
         ));
 ```
 
-> ###### Multiline
+###### Multiline
 ```
 $fieldset->addField('multiline', 'multiline', array(
           'label'     => Mage::helper('form')->__('Multi Line'),
@@ -232,7 +232,7 @@ $fieldset->addField('multiline', 'multiline', array(
         ));
 ```
 
-> ###### Link
+###### Link
 ```
 $fieldset->addField('link', 'link', array(
           'label'     => Mage::helper('form')->__('Link'),
@@ -243,21 +243,21 @@ $fieldset->addField('link', 'link', array(
         ));
 ```
 
-> ###### Label
+###### Label
 ```
 $fieldset->addField('label', 'label', array(
           'value'     => Mage::helper('form')->__('Label Text'),
         ));
 ```
 
-> ###### Image Upload
+###### Image Upload
 ```
 $fieldset->addField('image', 'image', array(
           'value'     => 'http://www.excellencemagentoblog.com/wp-content/themes/excelltheme/images/logo.png',
         ));
 ```
 
-> ###### File Upload
+###### File Upload
 ```
 $fieldset->addField('file', 'file', array(
           'label'     => Mage::helper('form')->__('Upload'),
@@ -269,7 +269,7 @@ $fieldset->addField('file', 'file', array(
         ));
 ```
 
-> ###### Date
+###### Date
 ```
 $fieldset->addField('date', 'date', array(
           'label'     => Mage::helper('form')->__('Date'),
@@ -280,7 +280,7 @@ $fieldset->addField('date', 'date', array(
         ));
 ```
 
-> ###### Checkbox
+###### Checkbox
 ```
 $fieldset->addField('checkbox', 'checkbox', array(
           'label'     => Mage::helper('form')->__('Checkbox'),
