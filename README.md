@@ -311,3 +311,26 @@ $fieldset->addField('checkboxes', 'checkboxes', array(
           'tabindex' => 1
         ));
 ```
+
+###### HTML editor
+```
+$fieldset->addField(‘html’, ‘editor’, array(
+                    ‘name’      => ‘html’,
+                    ‘label’     => Mage::helper(‘form’)->__(‘HTML’),
+                    ‘title’     => Mage::helper(‘form’)->__(‘HTML’),
+                    ‘style’     => ‘height:300px;’,
+                    ‘required’  => true,
+                    ‘config’    => Mage::getSingleton(‘cms/wysiwyg_config’)->getConfig(),
+                    ‘order’        => ‘3’,
+                ));
+```
+You also need to add this function:
+```
+protected function _prepareLayout()
+    {
+        parent::_prepareLayout();
+        if (Mage::getSingleton(‘cms/wysiwyg_config’)->isEnabled()) {
+            $this->getLayout()->getBlock(‘head’)->setCanLoadTinyMce(true);
+        }
+    }
+```
